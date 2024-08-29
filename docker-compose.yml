@@ -40,6 +40,7 @@ services:
     volumes:
       - ./filebeat.yml:/usr/share/filebeat/filebeat.yml
       - ./http-requests.log:/usr/src/app/http-requests.log
+      - ./rect-game.log:/usr/src/app/rect-game.log
     networks:
       - elastic
     depends_on:

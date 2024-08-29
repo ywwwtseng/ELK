@@ -5,6 +5,12 @@ filebeat.inputs:
     fields:
       log_type: pino-http
 
+  - type: log
+    paths:
+      - /usr/src/app/rect-game.log
+    fields:
+      log_type: rect-game
+
 output.logstash:
   hosts: ["logstash:5044"]
 
